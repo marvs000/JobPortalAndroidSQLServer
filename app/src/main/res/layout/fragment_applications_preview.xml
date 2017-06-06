@@ -1,0 +1,72 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical"
+             tools:context=".Portal.ApplicationsPreviewFragment"
+            android:padding="20dp"
+            android:background="@color/colorPrimary">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="View Submitted Applications"
+            android:id="@+id/textView3"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="View all submitted applications in the database here. For testing purposes only."
+            android:id="@+id/textView4"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Fetching applicants from the database..."
+            android:id="@+id/content"
+            android:layout_gravity="center_horizontal"
+            android:padding="20dp"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <com.mobileapplication.mobileapplication.util.GifImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/viewApplicantsSpinner"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+    <!--
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp"
+            android:background="@color/colorAccent"
+            android:visibility="gone"
+            android:id="@+id/comingSoon">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Coming Soon!"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/abc_text_size_large_material"
+                android:textStyle="bold"/>
+
+
+        </FrameLayout>
+
+    -->
+
+
+</ScrollView>

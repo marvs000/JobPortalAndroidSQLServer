@@ -1,0 +1,333 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             tools:context="com.mobileapplication.mobileapplication.Portal.CvFragment"
+              android:orientation="vertical"
+             android:padding="20dp"
+            android:fillViewport="false"
+            android:background="@color/colorPrimary">
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.mobileapplication.mobileapplication.Portal.CvFragment"
+    android:orientation="vertical"
+    >
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/cvApplicationForm">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Job Title"
+            android:id="@+id/cvJobTitle"
+            android:textColor="@color/colorPrimaryDark"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:textSize="24dp"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="24px"
+                android:layout_height="24px"
+                android:id="@+id/cvJobDescriptionIcon"
+                android:src="@drawable/notepad_icon24"
+                android:layout_margin="5dp"
+                android:layout_gravity="center_vertical"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:text="Job Description"
+                android:id="@+id/cvJobDescription"
+                android:textColor="@color/colorPrimaryDark"
+                android:padding="5dp"
+                android:textStyle="italic"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="24px"
+                android:layout_height="24px"
+                android:id="@+id/cvJobQualificationIcon"
+                android:src="@drawable/case_icon24"
+                android:layout_margin="5dp"
+                android:layout_gravity="center_vertical"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:text="Job Qualification"
+                android:id="@+id/cvJobQualification"
+                android:textColor="@color/colorPrimaryDark"
+                android:padding="5dp"
+                android:textStyle="italic"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="24px"
+                android:layout_height="24px"
+                android:id="@+id/cvSalaryIcon"
+                android:src="@drawable/cur_dollar_icon24"
+                android:layout_margin="5dp"
+                android:layout_gravity="center_vertical"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:text="Salary"
+                android:id="@+id/cvSalary"
+                android:textColor="@color/colorPrimaryDark"
+                android:padding="5dp"
+                android:layout_gravity="center"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Application Details"
+            android:id="@+id/applicationDetailsLabel"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:textSize="24dp"
+            android:paddingTop="20dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Fill up the application form below to apply for this job."
+            android:id="@+id/applicationDetailsDescription"
+            android:textColor="@color/colorPrimaryDark"
+            android:padding="5dp"
+            android:textStyle="italic"
+            android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/cvFirstName"
+                android:layout_gravity="center_horizontal"
+                android:hint="First Name"
+                android:paddingLeft="15dp"
+                android:paddingTop="15dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="15dp"
+                android:textSize="12dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/cvMiddleName"
+                android:layout_gravity="right"
+                android:hint="Middle Name"
+                android:paddingLeft="15dp"
+                android:paddingTop="15dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="15dp"
+                android:textSize="12dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/cvLastName"
+                android:layout_gravity="center_horizontal"
+                android:hint="Last Name"
+                android:paddingLeft="15dp"
+                android:paddingTop="15dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="15dp"
+                android:textSize="12dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:ems="10"
+                android:id="@+id/cvEmail"
+                android:layout_gravity="center_horizontal"
+                android:hint="Email Address"
+                android:paddingLeft="15dp"
+                android:paddingTop="15dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="15dp"
+                android:textSize="12dp"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Civil Status:"
+                    android:id="@+id/cvCivilStatusLabel"/>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/cvCivilStatusRadioGroup">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Single"
+                        android:id="@+id/cvRadioSingle"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Married"
+                        android:id="@+id/cvRadioMarried"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Divorced"
+                        android:id="@+id/cvRadioDivorced"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Widowed"
+                        android:id="@+id/cvRadioWidowed"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Separated"
+                        android:id="@+id/cvRadioSeparated"/>
+                </RadioGroup>
+            </LinearLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/cvContactNumber"
+                android:hint="Contact Number"
+                android:paddingLeft="15dp"
+                android:paddingTop="15dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="15dp"
+                android:textSize="12dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:text="Upload a resume from your device"
+                android:id="@+id/cvResumeLabel"
+                android:padding="10dp"
+                android:layout_gravity="center"
+                android:textAlignment="center"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upload resume"
+                android:id="@+id/cvUploadResumeButton"
+                android:layout_gravity="center"
+                />
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit Application"
+            android:id="@+id/cvSubmitApplication"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/cvApplicationFormMessage"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Message for user"
+            android:id="@+id/cvFormFinalMessage"
+            android:layout_gravity="center"
+            android:padding="20dp"
+            android:textAlignment="center"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Return to job portal"
+            android:id="@+id/cvReturnToPortal"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/cvFormSpinner"
+        android:layout_weight="1.0">
+
+        <com.mobileapplication.mobileapplication.util.GifImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cvSpinner"
+            android:layout_gravity="center"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>

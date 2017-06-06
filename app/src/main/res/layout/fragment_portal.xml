@@ -1,0 +1,93 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical"
+             tools:context=".Portal.JobSearchFragment"
+             android:background="@color/colorPrimary"
+    >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|top"
+        android:padding="20dp"
+        android:id="@+id/searchParameters">
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/searchField"
+            android:layout_weight="1"
+            android:inputType="text"
+            android:hint="@string/job_search_field_hint"
+            android:textSize="@dimen/abc_text_size_small_material"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/job_search_button_text"
+            android:id="@+id/searchJobsButton"
+            />
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/searchResults"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/searchLogo"
+        android:layout_gravity="center"
+        android:visibility="visible">
+
+        <ImageView
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:id="@+id/imageView3"
+            android:src="@mipmap/bus_icon_100"
+            android:layout_gravity="center"
+            android:layout_margin="20px"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Welcome to BTMS Careers!"
+            android:id="@+id/textView"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Are you ready to find your next job?"
+            android:id="@+id/textView2"
+            android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:id="@+id/spinnerContainer"
+        >
+
+        <com.mobileapplication.mobileapplication.util.GifImageView
+            android:layout_width="192px"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner"
+            android:layout_gravity="center"
+            android:foregroundGravity="center"/>
+    </LinearLayout>
+
+</LinearLayout>
